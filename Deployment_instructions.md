@@ -29,7 +29,7 @@ https://learn.microsoft.com/en-us/azure/search/semantic-how-to-enable-disable?ta
 
 ## Create an OpenAI service
 ```bash
-export AZURE_OPENAI_SERVICE=ai-assistant-openai1
+export AZURE_OPENAI_SERVICE=ai-assistant-openai
 az cognitiveservices account create \
 --name $AZURE_OPENAI_SERVICE \
 --custom-domain $AZURE_OPENAI_SERVICE \
@@ -90,7 +90,7 @@ Don't forget to update the `COGNITIVE_SEARCH_API_KEY` and `OPENAI_API_KEY` varia
 
 ## Build the Docker image
 ```bash
-export IMAGE_NAME=ss-ai-assistant-custom-image
+export IMAGE_NAME=ai-assistant-custom-image
 docker build --tag $IMAGE_NAME .
 ```
 
